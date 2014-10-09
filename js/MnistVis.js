@@ -556,6 +556,9 @@ var DirExploreMNIST = function DirExploreMNIST(s) {
   this.x    = this.new_child( ImgPixelDisplay );
   this.y    = this.new_child( ImgPixelDisplay );
 
+  this.axxDiv = this.inner.append('div');
+  this.axyDiv = this.inner.append('div');
+
   var this_ = this;
 
   this.plot.scatter.mouseover(function(i) { this_.x.img_display.show(i); this_.y.img_display.show(i);});
@@ -588,6 +591,24 @@ DirExploreMNIST.prototype.child_layout = function child_layout() {
   this.x.div
       .pos([plot + gutter, plot + gutter])
       .size([pick, pick]);
+
+  this.axyDiv
+      .attr('style', 'background: -moz-linear-gradient(right, red, gray, blue); background: linear-gradient(to right, red, #E3E3E3, blue);')
+      .style('border', '1px solid #000000')
+      .style('position', 'absolute')
+      .style('top',  plot+1)
+      .style('left', side)
+      .style('width',  plot)
+      .style('height', gutter/3);
+
+  this.axxDiv
+      .attr('style', 'background: -moz-linear-gradient(top, red, gray, blue); background: linear-gradient(to top, red, #E3E3E3, blue);')
+      .style('border', '1px solid #000000')
+      .style('position', 'absolute')
+      .style('top',  0)
+      .style('left', side - gutter/3 -1)
+      .style('width',  gutter/3)
+      .style('height', plot);
 
   return this;
 }
