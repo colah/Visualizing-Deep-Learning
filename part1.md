@@ -1,6 +1,7 @@
 ---
 title: Visualizing MNIST: An Exploration of Dimensionality Reduction
-date: 2014-10-08
+date: 2014-10-09
+published: true
 author: colah
 mathjax: on
 tags: MNIST, data visualization, machine learning, word embeddings, neural networks, deep learning
