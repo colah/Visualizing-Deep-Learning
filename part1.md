@@ -962,7 +962,7 @@ Acknowledgements
 I'm grateful for the hospitality of Google's deep learning research group, which had me as an intern while I wrote this post and did the work it is based on.
 I'm especially grateful to my internship host, Jeff Dean.
 
-I was greatly helped by the comments, advice, and encouragement of many Googlers, both on the Brain team and outside of it. These include: 
+I was greatly helped by the comments, advice, and encouragement of many Googlers, both in the deep learning group and outside of it. These include: 
 Greg Corrado, Jon Shlens, Matthieu Devin,
 Andrew Dai, Quoc Le,
 Anelia Angelova,
