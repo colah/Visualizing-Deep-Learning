@@ -959,7 +959,7 @@ If you're interested, you can subscribe to my [rss feed](../../rss.xml) so that 
 Acknowledgements
 =================
 
-I'm grateful for the hospitality of Google's deep learning research group, which had me as an intern while I wrote on this post and did the work it is based on.
+I'm grateful for the hospitality of Google's deep learning research group, which had me as an intern while I wrote this post and did the work it is based on.
 I'm especially grateful to my internship host, Jeff Dean.
 
 I was greatly helped by the comments, advice, and encouragement of many Googlers, both on the Brain team and outside of it. These include: 
