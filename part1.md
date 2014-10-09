@@ -959,7 +959,7 @@ If you're interested, you can subscribe to my [rss feed](../../rss.xml) so that 
 Acknowledgements
 =================
 
-I'm grateful for the hospitality of Google Brain, Google's deep learning research group, which hosted me as an intern while I worked on this post and the work it is based on.
+I'm grateful for the hospitality of Google's deep learning research group, which had me as an intern while I wrote on this post and did the work it is based on.
 I'm especially grateful to my internship host, Jeff Dean.
 
 I was greatly helped by the comments, advice, and encouragement of many Googlers, both on the Brain team and outside of it. These include: 
@@ -975,119 +975,6 @@ Michael's thoughts persuaded me that I should think seriously about interactive 
 I was also helped by the support of a number of non-Googler friends, including Yoshua Bengio, Dario Amodei, Eliana Lorch, Taren Stinebrickner-Kauffman, and Laura Ball.
 
 This blog post was made possible by a number of wonderful Javascript libraries, including [D3.js](http://d3js.org/), [MathJax](http://www.mathjax.org/), [jQuery](http://jquery.com/), and [three.js](http://threejs.org/). A big thank you to everyone who contributed to these libraries.
-
-
-<script type = "text/javascript" >
-/*
-  var unfold = function (w_hyps){
-    var new_hyps = w_hyps;
-    for (i in w_hyps) {
-      var hyp = w_hyps[i];
-      var ups = hyp_hyps[hyp];
-      if (ups.length) {
-        new_hyps = new_hyps.concat(unfold(ups));
-      }
-    }
-    return new_hyps;
-  }
-
-  var words_meta = {};
-  for (word_n in words){
-    words_meta[words[word_n]] = unfold(word_hyps[word_n]);
-  }
-
-  var word_of_hyp = function(word, hyp) {
-    var hyp_n = hyps.indexOf(hyp);
-    var meta  = words_meta[word];
-    return meta && meta.indexOf(hyp_n) != -1;
-  }
-
-
-  var categories = [];
-
-  var scatter = new BasicVis.ScatterPlot("#sne")
-    .N(5000)
-    .enable_zoom()
-    .xrange.fit(words_sne)
-    .yrange.fit(words_sne)
-    .x(function(i) {return words_sne[2*i  ];})
-    .y(function(i) {return words_sne[2*i+1];})
-    .size(3)
-    .color(function(i){
-      var k = -1;
-      for (var catn in categories) {
-        if (word_of_hyp(words[i], categories[catn])) {k = catn;}
-      }
-      if ( k == -1) { return d3.hsl(0.0,0.0,0.2); }
-      return d3.hsl(360*3*k/11.0,0.5,0.5);
-    });
-
-
-
-  var category_div_container = function(cont) {
-
-    var new_cat_div = function(){
-      var n = categories.length;
-      var inner = $("<div>").appendTo(cont);
-      var sq = $("<div>").appendTo(inner);
-      sq.css("width", "12px").css("height", "12px").css("display", "inline-block");
-      sq.css("background-color", "hsl(" + 360*3*n/11.0 + ",50%,50%)" );
-      var div = $("<input>").appendTo(inner);
-      div.css("display", "inline-block");
-      div.css("width", "175px");
-      div.css("margin-left", "5px");
-      //$("<br>").appendTo(cont);
-      category_div(div);
-    }
-
-    var category_div = function(div){
-
-      var n = categories.length;
-      categories.push("");
-
-      catChange = function(){
-        var s = this.value;
-        console.log(s);
-        if (hyps.indexOf(s) == -1 && s != "") return;
-        categories[n] = s;
-        scatter.scheduleUpdate();
-        if (categories.length == n + 1 && s != "")
-          new_cat_div();
-      }
-
-      div.autocomplete({
-        source: hyps,
-        select: catChange,
-        change: catChange
-      });
-      div.change(catChange);
-
-    }
-
-    new_cat_div();
-
-  }
-
-
-
-  scatter.scheduleUpdate();
-
-
-  category_div_container(categoryCont);
-
-
-  scatter.s.style("border", "1px black solid");
-  scatter.bindToWindowResize();
-
-  setTimeout(function() {
-    var a = new BasicVis.TextTooltip();
-    a._labels = words;
-    a.bind(scatter.points);
-    a.bind_move(scatter.s);
-  }, 50);
-*/
-</script>
-
 
 
 
