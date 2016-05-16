@@ -250,7 +250,7 @@ Examining this allows us to explore MNIST in a very raw way.
 
 Exploring this visualization, we can see some glimpses of the structure of MNIST.
 Looking at the <a href="#raw_mnist" onclick="raw_mnist_show([7,13], [18,16])">pixels $p_{18,16}$ and $p_{7,12}$</a>, we are able to separate a lot of zeros to the bottom right and a lot of nines to the top left.
-Looking at <a href="#raw_mnist" onclick="raw_mnist_show([5,7], [7,10])">pixels $p_{5,6}$ and $p_{7,9}$</a> we can see a lot of twos at the top right and threes at the bottom right.
+Looking at <a href="#raw_mnist" onclick="raw_mnist_show([5,7], [7,10])">pixels $p_{5,6}$ and $p_{7,9}$</a> we can see a lot of twos at the top right and threes at the top left.
 
 Despite minor successes like these, one can't really can't understand MNIST this way.
 The small insights one gains feel very fragile and feel a lot like luck.
