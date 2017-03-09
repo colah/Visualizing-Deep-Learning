@@ -257,7 +257,7 @@ The small insights one gains feel very fragile and feel a lot like luck.
 The truth is, simply, that very little of MNIST's structure is visible from these perspectives.
 You can't understand images by looking at just two pixels at a time.
 
-But there's lots of other perspectives we could look at MNIST from!
+But there are lots of other perspectives we could look at MNIST from!
 In these perspectives, instead of looking a face straight on, one looks at it from an angle.
 
 The challenge is that we need to choose what perspective we want to use.
